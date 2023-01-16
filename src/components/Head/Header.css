@@ -1,0 +1,13 @@
+.logo{
+    width : 50px;
+    height : 50px;
+}
+.button_a:hover{
+    background-color:#0197f6 !important;
+    color: white !important;
+}
+.star_btn{
+    color: black;
+    font-weight: bold;
+
+}
