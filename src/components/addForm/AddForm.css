@@ -2,15 +2,36 @@
     background-color: rgb(248,249,250);
 }
 
-.category_container{
-    /* background-color: blue; */
-    padding: 10px;
-    /* height: 200px; */
+ 
+
+.category_dropdown{
+    border: 1px solid #dee2e6;
+    background-color: white;
+    padding: 0.375rem .75rem;
+    border-radius: .375rem;
+    margin-bottom: 5px;
 }
 
+.category_container{
+    border: 1px solid #dee2e6;
+    background-color: white;
+    padding: 0.375rem .75rem;
+    border-radius: .375rem;
+
+} 
 .cat_item{
     display: flex;
     justify-content: space-between;
     height: 25px;
     padding-bottom: 5px;
+}
+
+.cat_item:hover{
+    background-color: rgb(248,249,250);
+}
+
+.head{
+    display: flex;
+    justify-content: space-between;
+    /* padding-bottom: 10px; */
 }
