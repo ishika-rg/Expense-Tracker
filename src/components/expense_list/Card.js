@@ -9,8 +9,6 @@ const Card = ({ item, notifyDelete }) => {
   console.log(item);
 
   // const time = Moment(item.createdAt).fromNow()
-  console.log(item.createdAt.toLocaleTimeString());
-  let newTime = item.createdAt.toLocaleTimeString();
 
   const dispatch = useDispatch();
   const handleDelete = () => {

@@ -1,7 +1,28 @@
+.search_box {
+  width: 200%;
+}
 
-.search_box{
-    width : 200% ;
-    
+@media screen and (max-width: 768px) {
+  .search_box {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .search_box {
+    width: 100%;
+  }
+  .topfold {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+  .add_btn {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+    text-decoration: none;
+  }
 }
 
 /* .topfold{

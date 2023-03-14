@@ -1,4 +1,4 @@
-import { ADD_EXPENSE, DELETE_EXPENSE } from "../constants/ActionType"
+import { ADD_EXPENSE, DELETE_EXPENSE, SEARCH_EXPENSE } from "../constants/ActionType"
 
 
 
@@ -20,5 +20,12 @@ export const delete_expense = (data) => {
     return {
         type : DELETE_EXPENSE,
         data : data
+    }
+}
+
+export const search_expense = (query) => {
+    return {
+        type : SEARCH_EXPENSE,
+        query : query
     }
 }

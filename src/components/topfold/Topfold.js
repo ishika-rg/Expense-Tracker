@@ -6,19 +6,24 @@ import { Link } from "react-router-dom";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import InputGroup from "react-bootstrap/InputGroup";
+import { useDispatch } from "react-redux";
+import { search_expense } from "../../redux/actions/action";
 
 const Topfold = () => {
+  const dispatch = useDispatch();
   const [query, setQuery] = useState("");
+
   const handleQuery = (e) => {
     setQuery(e.target.value);
-    console.log(query);
+    // console.log(query);
+    dispatch(search_expense(e.target.value));
   };
 
   //   console.log(window.location.pathname)
   return (
     <div className="container">
       {window.location.pathname === "/" ? (
-        <div className="topfold mt-4 d-flex justify-content-between px-5">
+        <div className="topfold mt-4 px-3 px-md-5 d-flex justify-content-between ">
           <div className="home-top">
             <InputGroup className="mb-3 search_box">
               <Form.Control
