@@ -47,7 +47,10 @@ const Expense_list = () => {
 
       <div className="expense_list mt-3 px-3 px-md-5 ">
         {filteredList.length === 0 ? (
-          <h1> No expenses Added</h1>
+          <div className="noExpense"> 
+            <h1>No expense added</h1>
+            {/* <p>Add your expenses</p> */}
+          </div>
         ) : (
           filteredList.map((item) => (
             <Card

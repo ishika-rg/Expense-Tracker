@@ -85,7 +85,7 @@ const AddForm = () => {
         setSuccessModalopen={setSuccessModalopen}
       />
 
-      <Form className="add_form  w-50 m-auto mt-5 p-3 rounded-2">
+      <Form className="add_form   w-50 m-auto mt-5 p-3 rounded-2">
         <Form.Group className="mb-3" controlId="expense">
           <Form.Label>Title</Form.Label>
           <Form.Control

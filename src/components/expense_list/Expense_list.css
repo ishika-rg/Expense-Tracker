@@ -2,3 +2,16 @@
   display: flex;
   flex-direction: column;
 }
+
+.noExpense{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.noExpense p{
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}

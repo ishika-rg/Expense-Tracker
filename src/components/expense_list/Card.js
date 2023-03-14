@@ -1,8 +1,9 @@
 import React from "react";
 import "./Card.css";
-import Moment from "react-moment";
 import { useDispatch } from "react-redux";
 import { delete_expense } from "../../redux/actions/action";
+// import Moment from "react-moment";
+
 
 const Card = ({ item, notifyDelete }) => {
   console.log("from card");
